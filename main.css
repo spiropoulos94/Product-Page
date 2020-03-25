@@ -1,0 +1,226 @@
+.header {
+  background-color: black;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 80%;
+  margin-top: 2vh;
+}
+
+.front-image {
+  width: 100%;
+}
+
+.wrap {
+  position: relative;
+  text-align: center;
+  color: white;
+  border-width: 5px 0px 5px 0px;
+  border-style: solid solid solid solid;
+  border-color: black;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7.5vw;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px black;
+  border-width: 5px 0px 5px 0px;
+  border-style: solid solid solid solid;
+}
+
+.image-sub-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: 4vw;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: no-wrap;
+
+  border-width: 0px 0px 5px 0px;
+  border-style: solid solid solid solid;
+  font-size: 2.5vh;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    180deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(148, 84, 191, 1) 97%
+  );
+}
+
+.nav-flexitem {
+  text-align: center;
+  flex-basis: 30%;
+  height: 40%;
+}
+
+.reverseicon {
+  flex-basis: 5%;
+  width: 14%;
+  height: 14%;
+}
+
+.section {
+  position: relative;
+  text-align: center;
+}
+
+.section p {
+  position: absolute;
+  top: 14%;
+  right: 2%;
+  text-shadow: 5px 5px 10px black;
+  border-width: 0px 5px 0px 5px;
+  border-style: solid solid solid solid;
+
+  font-size: 6.5vw;
+  color: white;
+  font-weight: bold;
+  padding: 2vw;
+}
+
+.section img {
+  width: 100%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.section > .text {
+  text-align: center;
+  padding: 60px;
+}
+
+#battery p {
+  position: absolute;
+  top: 60%;
+  right: 2%;
+  text-shadow: 5px 5px 10px black;
+  border-width: 0px 5px 0px 5px;
+  border-style: solid solid solid solid;
+
+  font-size: 6.5vw;
+  color: white;
+  font-weight: bold;
+  padding: 2vw;
+}
+
+.text {
+  padding: 10vw;
+  font-size: 3vh;
+  border-width: 0px 1px 0px 1px;
+  border-style: solid;
+}
+
+a {
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3.5vw;
+  text-decoration: wavy;
+  padding: 2px;
+}
+
+#reverse {
+  border: none;
+}
+
+a:hover {
+  background-color: black;
+}
+
+#reverse:hover {
+  background: none;
+}
+
+.header a:hover {
+  background-color: black;
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer img {
+  width: 10vw;
+}
+
+#footer a {
+  color: black;
+  background: none;
+  font-size: inherit;
+}
+
+@media (min-width: 640px) {
+  body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .image-sub-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border: 3vw solid black;
+  }
+
+  .image-sub-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+    font-size: 2vw;
+  }
+
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5.5vw;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px black;
+    border-width: 5px 0px 5px 0px;
+    border-style: solid solid solid solid;
+  }
+
+  .text {
+    
+    padding: 10vw;
+    font-size: 3vh;
+    margin-left:5vw;
+    
+    border-width: 0px 0px 0px 3px;
+    border-style:double;
+  }
+
+  a {
+    font-size: 2vw;
+  }
+}
